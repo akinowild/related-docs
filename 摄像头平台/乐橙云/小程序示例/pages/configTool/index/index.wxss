@@ -1,0 +1,82 @@
+.page {
+  min-height: 100vh;
+  /* padding: 0 50rpx; */
+  background-size: 100% 100%;
+  background-image: url('https://resource-public.oss-cn-hangzhou.aliyuncs.com/open/develop/source_1676883685196/pic_shouye.png');
+  -moz-background-size: 100% 100%;
+  position: relative;
+}
+.navigation{
+  position: absolute;
+  top:20%;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+
+.content {
+  position: absolute;
+  top: 13%;
+}
+.title {
+  padding: 107rpx 50rpx 0;
+}
+
+.title1 {
+  width: 132rpx;
+  height: 62rpx;
+  font-size: 44rpx;
+  font-family: PingFang SC-Heavy, PingFang SC;
+  font-weight: 800;
+  color: #2C2C2C;
+}
+
+.title2 {
+  margin-top:10rpx;
+  width: 352rpx;
+  height: 62rpx;
+  font-size: 44rpx;
+  font-family: PingFang SC-Heavy, PingFang SC;
+  font-weight: 800;
+  color: #2C2C2C;
+}
+
+.desc {
+  margin: 0rpx 50rpx;
+  margin-top: 20rpx;
+  width: 650rpx;
+  height: 73rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #8F8F8F;
+}
+
+.inputName {
+  position: relative;
+  margin: 0 auto;
+  width: 650rpx;
+  height: 100rpx;
+  background: #F6F6F6;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+  opacity: 1;
+}
+
+.confirm-button {
+  display: flex;
+  margin: 0px 50rpx;
+  background-color: #337fff;
+  border-radius: 45rpx;
+}
+
+.confirm-button-content {
+  font-family: PingFang SC;
+  font-size: 28rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 56rpx;
+  letter-spacing: 0rpx;
+  color: #ffffff;
+}

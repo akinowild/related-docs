@@ -1,0 +1,18 @@
+/* pages/selfDevice/index/index.wxss */
+
+
+.confirm-button{
+  display: flex;
+  margin: 0px 30rpx;
+  background-color: #337fff;
+  border-radius: 45rpx;
+}
+.confirm-button-content{
+  font-family: PingFang SC;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 56rpx;
+	letter-spacing: 0rpx;
+	color: #ffffff;
+}

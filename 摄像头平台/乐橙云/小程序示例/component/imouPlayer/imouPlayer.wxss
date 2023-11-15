@@ -1,0 +1,96 @@
+/* pages/cloudLive/index.wxss */
+.page{
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 100%;
+  }
+  .background{
+    background-color: #ffffff;
+  }
+  .video-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .bottomControl{
+    width: 100%;
+    position: absolute;
+    bottom: 0rpx;
+    left: 0rpx;
+    height: 90rpx;
+    display: flex;
+  }
+  .left{
+    position: absolute;
+    left: 0rpx;
+  }
+  .right-1{
+    position: absolute;
+    right: 0rpx;
+    z-index: 1;
+  }
+  .right-2{
+    position: absolute;
+    right: 90rpx;
+    z-index: 1;
+  }
+  .right-3{
+    position: absolute;
+    right: 180rpx;
+    z-index: 1;
+  }
+  .icon{
+    width: 50rpx;
+    height: 50rpx;
+    padding: 20rpx;
+    color:white;
+  }
+  .hd{
+    display: flex;
+    font-size: 40rpx;
+    justify-content: center;
+    opacity: 0.98;
+    align-items: center;
+    position: relative;
+  }
+
+.hd-select{
+  position: absolute;
+  width: 90rpx;
+  right: 180rpx;
+  bottom: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #000000;
+  opacity: 0.64;
+  flex-direction: column;
+}
+
+  .hd-select-full{
+    position: absolute;
+    right: 0rpx;
+    top: 0rpx;
+    height: 100vh;
+    width: 200rpx;
+    background: #000000;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 0;
+  }
+  .active{
+    font-size: 42rpx;
+    color:white;
+    opacity: 1;
+  }

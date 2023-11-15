@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Document</title>
+</head>
+<style>
+  #operation {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    z-index: 9999;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  #operation li {
+    flex: auto;
+    width: 150px;
+    list-style-type: none;
+  }
+
+  #buttons {
+    margin-bottom: 20px;
+    display: flex;
+    width: 800px;
+    flex-wrap: wrap;
+  }
+
+  #buttons>div {
+    width: 800px;
+    height: 20px;
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  #buttons>div>span {
+    width: 300px;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  #buttons>div>input {
+    display: block;
+    width: 300px;
+    font-size: 16px;
+    line-height: 1;
+    height: 20px;
+    transform: translateZ(0);
+    outline: none;
+  }
+
+  #start {
+    float: left;
+  }
+</style>
+
+<body>
+  <div id="buttons">
+    <div><span>deviceId</span> <input id="deviceId" placeholder="deviceId" value="" /></div>
+    <div><span>token</span> <input id="token" placeholder="token" value="" /></div>
+    <div><span>channelId</span> <input id="channelId" placeholder="channelId" value="0" /></div>
+    <div><span>清晰度 高清:0 标清:1 </span><input id="streamId" placeholder="streamId 0 高清  1 标清" value="0" /></div>
+    <div><span>播放类型 直播:1 录播:2</span> <input id="type" placeholder="1:直播  2:录播" value="1" /></div>
+    <div><span>加密秘钥</span> <input id="code" placeholder="" value="" /></div>
+    <div><span>录播类型 本地录像 localRecord 云录像</span> <input id="recordType" placeholder="默认云录像" value="" /></div><button
+      id="start">开始播放</button>
+  </div>
+  <div id="root"></div>
+  <div id="logs">logs:</div>
+  <script>//    获取 url 中的值 进行赋值
+    window.onload = function () {
+      const queryString = decodeURI(location.search)
+
+      const params = new URLSearchParams(queryString)
+      const deviceId = params.get('deviceId')
+      const channelId = params.get('channelId')
+      const token = params.get('token')
+      const code = params.get('code')
+      const streamId = params.get('streamId')
+      const type = params.get('type')
+      const recordType = params.get('recordType')
+
+
+      if (deviceId) document.getElementById('deviceId').value = deviceId
+      if (channelId) document.getElementById('channelId').value = channelId
+      if (token) document.getElementById('token').value = token
+      if (code) document.getElementById('code').value = code
+      if (streamId) document.getElementById('streamId').value = streamId
+      if (type) document.getElementById('type').value = type
+      if (recordType) document.getElementById('recordType').value = recordType
+
+      const button = document.getElementById('start')
+      let player
+      button.addEventListener('click', () => {
+        player && player.destroy()
+        player = null
+        const deviceId = document.getElementById('deviceId').value
+        // 获取所有的值，然后开始播放
+        const token = document.getElementById('token').value
+        const channelId = document.getElementById('channelId').value
+        const streamId = document.getElementById('streamId').value
+        const type = document.getElementById('type').value
+        const code = document.getElementById('code').value
+        const recordType = document.getElementById('recordType').value
+        const logs = document.getElementById('logs')
+        // logs.inner
+        player = new imouPlayer({
+          id: 'root',
+          width: 800,
+          height: 400,
+          // 设备序列号
+          deviceId: deviceId || '7H0B188PCG1834B',
+          // deviceId: '6M0C7E9PAZ0AE10',
+          // deviceId: '5H08FAEPAJ304A6',
+          token: token || 'Kt_hz00e4c3a295714b58901888f4dd4b34',
+          channelId: channelId || 0,
+          // 1 直播  2 录播
+          type: parseInt(type) || 1,
+          // 直播 0 高清  1 标清  默认
+          streamId: streamId || 0,
+          // 录播 云录像 1 本地录像 localRecord 默认 云录像
+          recordType: recordType || 'cloud',
+          code
+          // // 自动播放
+          // autoPlay: false
+        })
+        console.log('player', player)
+
+        player.on('play', (res) => {
+          console.log('开始播放 play', res)
+          logs.innerHTML += '开始播放 play'
+        })
+
+        player.on('pause', () => {
+          console.log('播放器暂停 pause')
+          logs.innerHTML += '播放器暂停 pause'
+        })
+
+        player.on('error', (res) => {
+          // console.log('播放器错误 error', res)
+          logs.innerHTML += `播放器错误 error${JSON.stringify(res)}`
+        })
+
+        player.on('volume', (res) => {
+          logs.innerHTML += 'volumer'
+          console.log('声音控制', res)
+        })
+
+        player.on('talk', (res) => {
+          logs.innerHTML += JSON.stringify(res)
+          console.log('对讲 talk', res)
+        })
+      })
+    }</script>
+</body>
+
+</html>

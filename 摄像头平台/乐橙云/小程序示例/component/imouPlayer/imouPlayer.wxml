@@ -1,0 +1,54 @@
+<!--pages/cloudLive/index.wxml-->
+<view class="page">
+  <view class="video-wrapper">
+    <live-player style="width:{{styleConfig.width}};height:{{styleConfig.height}};position: relative;" id="live-player"
+      class="video" src="{{src}}" mode="live" background-mute="{{true}}" orientation="vertical" object-fit="contain"
+      bindstatechange="state" muted="{{!audioFlag}}" binderror="error">
+      <!-- 用于中间过渡数据展示 -->
+      <!-- 底部控制栏 使用 view 重构 -->
+      <view class="bottomControl" hidden="{{state.code === 2}}">
+        <view bindtap="playOrPause">
+          <!-- 播放暂停 按钮 -->
+          <image class="icon" src="./images/{{videoFlag ? 'pause' : 'play'}}.png"></image>
+        </view>
+        <!-- 高清&标清 按钮 -->
+        <view bindtap="showOrCloseSelect" hidden="{{state.code === 2 || type === 0}}" class="right-3">
+          <view class="icon hd">{{ isHD ? 'HD': 'SD'}} </view>
+        </view>
+        <!-- 音量控制按钮 -->
+        <view bindtap="soundOrmute" class="right-2">
+          <image class="icon" src="{{audioImgSrc}}"></image>
+        </view>
+        <!-- 全局按钮 -->
+        <view bindtap="exitOrFull" class="right-1">
+          <image class="icon " src="./images/transform.png"></image>
+        </view>
+
+      </view>
+      <view style="color:white;width:100%;height:100%;display:flex;justify-content:center;align-items:center;">
+        <!-- 企业微信无法加载 gif 图 & 使用文字进行加载 -->
+        <cover-image hidden="{{state.code !== 0}}" style="width:150rpx;height:150rpx;z-index: 200;"
+          src="./images/loading_grey.gif"></cover-image>
+        <view hidden="{{state.code !== 1 && state.code !== 2}}" style="font-size: 30rpx;">{{state.msg}}
+        </view>
+      </view>
+      <!-- 竖屏选择 -->
+      <view class="hd-select" hidden="{{!isSelectShow || fullScreenFlag}}">
+        <view style="height:30rpx;"></view>
+        <view bindtap="changeHD" style="height:30rpx;padding-bottom: 15rpx; color: {{ isHD? '#337FFF': 'white'}};">
+          HD</view>
+        <view bindtap="changeSD" style="height:30rpx;color: {{ isHD? 'white': '#337FFF'}};">SD</view>
+      </view>
+      <!-- 全屏的显示 -->
+      <view class="hd-select-full" hidden="{{!isSelectShow || !fullScreenFlag}}">
+        <view class="container">
+          <view class="active" bindtap="changeHD"
+            style="height:30rpx;padding-bottom: 30rpx; color: {{ isHD? '#337FFF': 'white'}};"> HD
+          </view>
+          <view class="active" bindtap="changeSD" style="height:30rpx;color: {{ isHD? 'white': '#337FFF'}};">SD</view>
+        </view>
+      </view>
+    </live-player>
+
+  </view>
+</view>

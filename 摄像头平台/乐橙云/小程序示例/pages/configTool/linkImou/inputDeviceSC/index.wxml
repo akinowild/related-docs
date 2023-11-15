@@ -1,0 +1,35 @@
+<!--pages/configTool/linkImou/inputDeviceSC/index.wxml-->
+
+<view class="title"> 请输入设备密码</view>
+<view >
+  <view class="inputName" style="margin-top:40rpx;padding-left: 20rpx;">
+    <input class="inputName" bindinput="onAppSecretInput" type='text' password="{{password}}" value="{{SC}}"
+      placeholder="请输入设备密码" style="width:500rpx;margin:0;" />
+    <view class="iconPosition" bindtap="onChangePassword">
+      <image src="{{ passwordUrl }} " style="width: 64rpx;height: 64rpx;"></image>
+    </view>
+  </view>
+</view>
+
+<view class="desc">
+  <view class="desc-title">
+    温馨提示
+  </view>
+  <view class="desc-desc" style="margin-top:20rpx;">
+    1、若您修改过设备密码，则设备密码为您修改的最新密码
+  </view>
+  <view class="desc-desc">
+    2、若您未修改过设备密码，则默认密码为标签上的8位安全码
+  </view>
+  <image class="desc-img" src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_anquanma.png"></image>
+
+
+</view>
+
+<view style="position: absolute;bottom: 120rpx;width:100%;">
+  <my-row>
+    <van-button disabled="{{!nextButtonClick}}" round type="info" bind:click="onBindOpenAccount" block size="normal" class='confirm-button'>
+      <span class='confirm-button-content'>下一步</span>
+    </van-button>
+  </my-row>
+</view>

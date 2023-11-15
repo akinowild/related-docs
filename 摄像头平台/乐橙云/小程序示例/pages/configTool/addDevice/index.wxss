@@ -1,0 +1,57 @@
+/* pages/configTool/addDevice/index.wxss */
+
+.desc {
+  margin-left: 50rpx;
+  margin-top: 107rpx;
+  width: 308rpx;
+  height: 62rpx;
+  font-size: 44rpx;
+  font-family: PingFang SC-Heavy, PingFang SC;
+  font-weight: 800;
+  color: #2C2C2C;
+}
+
+.deviceContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90rpx;
+}
+
+.addDeviceContainer {
+  width: 310rpx;
+  height: 310rpx;
+  background: #F6F6F6;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 90rpx;
+  height: 90rpx;
+  background: #5D99FF;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+  opacity: 1;
+}
+
+.desc-title{
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC-Bold, PingFang SC;
+  font-weight: bold;
+  color: #262626;
+}
+.text {
+  margin: 30rpx auto 0;
+  width: 650rpx;
+  height: 124rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #8F8F8F;
+  line-height: 42rpx;
+}

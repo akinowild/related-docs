@@ -1,0 +1,11 @@
+<view>
+  <view style="margin-top:38rpx;">
+    <image class="img" src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_lanya2.png"></image>
+  </view>
+  <view class="title">
+    自动连接蓝牙中，请等待
+  </view>
+  <view class="desc">
+    连接后系统将自动进入下一步
+  </view>
+</view>

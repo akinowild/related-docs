@@ -1,0 +1,14 @@
+/*!
+ * Layui
+ * Classic modular Front-End UI library
+ * MIT Licensed
+ */
+
+/*!
+ * layDate 日期与时间组件（单独版）
+ * MIT Licensed
+ */
+
+/*! lay 基础 DOM 操作 | MIT Licensed */
+
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */

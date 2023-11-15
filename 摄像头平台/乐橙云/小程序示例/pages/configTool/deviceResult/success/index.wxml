@@ -1,0 +1,17 @@
+<view class="header">
+  <view>
+    <view>
+      <image
+        src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_chenggong.png"
+        class="header-img">
+      </image>
+    </view>
+    <view class="header-title">      添加成功    </view>
+    <view class="header-desc">      请前往“自助设备”查看   </view>
+  </view>
+</view>
+
+<view style="position: absolute;bottom: 120rpx;width:100%;">
+  <!-- 回到 添加页面 -->
+  <button bindtap="backToIndex" class="button" style="background: #337FFF;color:#FFFFFF;"> 完成 </button>
+</view>

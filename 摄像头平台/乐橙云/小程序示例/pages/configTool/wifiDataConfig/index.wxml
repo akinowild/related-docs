@@ -1,0 +1,60 @@
+<view class="page">
+  <view style="margin:0 50rpx;">
+    <view class="tilte">请连接设备需要连接的WIFI</view>
+    <view style="display: flex;  margin-top: 20rpx;">
+      <view class="desc">仅支持2.4G频段Wi-Fi </view>
+      <view bindtap="onShowHelpMessage">
+        <image
+          src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_tishi.png"
+          class="desc-img" mode="aspectFit"></image>
+      </view>
+    </view>
+  </view>
+  <view style="margin: 0 50rpx;">
+    <image
+      src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_2.4G.png"
+      class="main-img" mode="aspectFit"></image>
+  </view>
+  <view class="inputName" style="margin-top:32rpx;padding-left: 20rpx;">
+    <input class="inputName" bindinput="onAppIdInput" type='text' value="{{wifiName}}" placeholder="Wi-Fi名称" />
+    <view class="iconPosition" bindtap="onShowToast">
+      <image
+        src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_qiehuan.png"
+        style="width: 64rpx;height: 64rpx;"></image>
+    </view>
+  </view>
+  <view class="inputName" style="margin-top:40rpx;padding-left: 20rpx;">
+    <input class="inputName" bindinput="onAppSecretInput" type='text' password="{{password}}" value="{{wifiPassword}}"
+      placeholder="Wi-Fi密码" style="width:500rpx;margin:0;"/>
+    <view class="iconPosition" bindtap="onChangePassword">
+      <image src="{{ passwordUrl }} " style="width: 64rpx;height: 64rpx;"></image>
+    </view>
+  </view>
+  <view style=" margin:0 auto;margin-top:30rpx; width: 650rpx;height: 100rpx;">
+    <van-checkbox value="{{ rememberRadio }}" bind:change="onRememberChange">记住密码</van-checkbox>
+  </view>
+  <view class="nextButton">
+    <my-row>
+      <van-button round type="info" bind:click="onBindOpenAccount" block size="normal" class='confirm-button'>
+        <span class='confirm-button-content'>下一步</span>
+      </van-button>
+    </my-row>
+  </view>
+</view>
+
+
+
+<van-action-sheet show="{{ showActionSheet }}">
+  <view class="popUp">
+    <view class="popUp-ttile">请将您的设备连接到2.4G Wi-Fi网络</view>
+    <view class="popUp-desc">
+      <view>1.您的设备暂不支持5G Wi-Fi，如您使用的是双频路由器，请让手机和设备连接到2.4G Wi-Fi的信号下。</view>
+      <view> 2.如您不确定手机和设备当前所连接的Wi-Fi频段,您可查看路由器相关说明书，进入路由器设置页面进行确认。</view>
+    </view>
+    <view style="margin-top:70rpx;">
+      <van-button round type="info" bind:click="onCloseHelpMessage" block size="normal" class='confirm-button'>
+        <span class='confirm-button-content'>知道了</span>
+      </van-button>
+    </view>
+  </view>
+</van-action-sheet>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "blue-tooth-config": "/component/blueToothConfig/blueToothConfig"
+  }
+}

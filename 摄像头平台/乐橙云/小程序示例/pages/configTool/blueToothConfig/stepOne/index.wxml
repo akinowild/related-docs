@@ -1,0 +1,22 @@
+<!--pages/configTool/deviceResult/index.wxml-->
+
+
+<view>
+  <view style="margin-top:38rpx;">
+    <image class="img" src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_lanya.png"></image>
+  </view>
+  <view class="title">
+    开启手机蓝牙
+  </view>
+  <view class="desc">
+    打开手机蓝牙后，点击下一步
+  </view>
+  <view style="position: absolute;bottom: 120rpx;width:100%;">
+    <my-row>
+      <van-button round type="info" bind:click="onBindOpenAccount" block size="normal" class='confirm-button'>
+        <span class='confirm-button-content'>下一步</span>
+      </van-button>
+    </my-row>
+  </view>
+</view>
+

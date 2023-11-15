@@ -1,0 +1,36 @@
+<view>
+  <view style="margin-top:38rpx;">
+    <image class="img" src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_zhishideng.png"></image>
+  </view>
+  <view class="title">
+    进入配网模式
+  </view>
+  <view class="desc">
+    等待设备/指示灯呈现闪烁状态，然后点击下一步
+  </view>
+  <view style="position: absolute;bottom: 120rpx;width:100%;">
+    <view class="desc-second" bindtap="onShowHelpMessage"> 未见指示灯闪烁? </view>
+    <my-row>
+      
+      <van-button round type="info" bind:click="onBindOpenAccount" block size="normal" class='confirm-button'>
+        <span class='confirm-button-content'>下一步</span>
+      </van-button>
+    </my-row>
+  </view>
+</view>
+
+<van-action-sheet show="{{ showActionSheet }}">
+  <view class="popUp">
+    <view class="popUp-ttile">如何进入配网状态</view>
+    <view class="popUp-desc">
+      <view> 1、将设备接通至电源</view>
+      <view> 2、长按设备功能键按钮5-10s</view>
+      <view> 3、等待设备/指示灯呈现闪烁状态</view>
+    </view>
+    <view style="margin-top:70rpx;">
+      <van-button round type="info" bind:click="onCloseHelpMessage" block size="normal" class='confirm-button'>
+        <span class='confirm-button-content'>知道了</span>
+      </van-button>
+    </view>
+  </view>
+</van-action-sheet>

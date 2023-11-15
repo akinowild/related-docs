@@ -1,0 +1,7 @@
+/* pages/playBack/index.wxss */
+
+.picker{
+  display: flex;
+  justify-content: center;
+  height: 32rpx;
+}

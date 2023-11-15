@@ -1,0 +1,44 @@
+<view class="width:100vw;">
+  <view style="display: flex;align-items: center;justify-content: center;color: #337fff;" class="item">
+    <view
+      style="font-size: 24rpx;font-family: PingFang SC;font-weight: normal; font-stretch: normal; line-height: 44rpx;">
+      <text style="font-size:24rpx;">{{ date }}</text>
+    </view>
+  </view>
+  <scroll-view scroll-x="true" enable-flex="true" enhanced="true" show-scrollbar="{{false}}" scroll-left="{{left}}">
+    <view style="display: flex; position: relative;" scroll-x="true" class="time-line-item" enhanced="true"
+      bindtouchend="_binddragend" binddragend="_binddragend" bindtouchmove='_bindtouchMove' disable-scroll="true"
+      id="time">
+      <view id="time-line-item" style="display: flex; position: relative;">
+        <view wx:for="{{lines}}">
+          <view style="display: flex;flex-direction: column;flex:0 0 auto;" class="middle_line">
+            <view class="top">
+              <view class="top-line-first">
+                <view class="top-line-first-text" style="color: #b9b9b9;">{{item}}</view>
+              </view>
+              <view class="top-line"></view>
+              <view class="top-line"></view>
+              <view class="top-line"></view>
+              <view class="top-line"></view>
+              <view class="top-line"></view>
+            </view>
+            <view class="middle">
+            </view>
+            <view class="bottom">
+              <view class="line-first"></view>
+              <view class="line"></view>
+              <view class="line"></view>
+              <view class="line"></view>
+              <view class="line"></view>
+              <view class="line"></view>
+            </view>
+          </view>
+        </view>
+        <view wx:for="{{timeRecords}}" class="middle_postion">
+          <view class="middle_color" style="left:{{item.left}}px;width:{{item.width}}px"></view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+</view>

@@ -1,0 +1,62 @@
+/* pages/openbind/openbind.wxss */
+
+.page {
+  height: 100%;
+}
+
+.tilte {
+  width: 576rpx;
+  height: 45rpx;
+  font-size: 32rpx;
+  font-family: PingFang SC-Bold, PingFang SC;
+  font-weight: bold;
+  color: #2C2C2C;
+  line-height: 56rpx;
+}
+
+.desc {
+  margin: 30rpx 50rpx 0;
+  width: 396rpx;
+  height: 33rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #8F8F8F;
+  line-height: 44rpx;
+  margin-bottom: 20rpx;
+}
+
+.inputName {
+  margin: 0 auto;
+  width: 650rpx;
+  height: 100rpx;
+  background: #F6F6F6;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+  opacity: 1;
+}
+
+.confirm-button {
+  display: flex;
+  margin: 0px 50rpx;
+  background-color: #337fff;
+  border-radius: 45rpx;
+}
+
+.confirm-button-content {
+  font-family: PingFang SC;
+  font-size: 28rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 56rpx;
+  letter-spacing: 0rpx;
+  color: #ffffff;
+}
+
+.img {
+  margin:0 50rpx;
+  width: 650rpx;
+  height: 400rpx;
+  background: #F6F6F6;
+  border-radius: 40rpx 40rpx 40rpx 40rpx;
+  opacity: 1;
+}

@@ -1,0 +1,9 @@
+<view>
+  <view style="margin-top:38rpx;">
+    <image class="img" src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_beibangding.png"></image>
+  </view>
+  <view class="desc">
+    {{msg}}
+  </view>
+</view>
+

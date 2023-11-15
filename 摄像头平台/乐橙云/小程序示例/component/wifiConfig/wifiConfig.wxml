@@ -1,0 +1,16 @@
+<view>
+  <view style="margin-top:38rpx;">
+    <image class="img" src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_wlan.png"></image>
+  </view>
+  <view class="title">
+    连接设备热点
+  </view>
+  <view class="desc">
+    请进入手机的Wi-Fi设置，连接到如图所示热点，然后返回此页面
+  </view>
+</view>
+<view style="position: absolute;bottom: 120rpx;width:100%;"  wx:if="{{showConnect}}">
+    <button type="info" bindtap="handleSearch" block size="normal" class='confirm-button'>
+      <span class='confirm-button-content'>去连接</span>
+    </button>
+</view>

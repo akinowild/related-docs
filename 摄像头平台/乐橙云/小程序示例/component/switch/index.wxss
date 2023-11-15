@@ -1,0 +1,30 @@
+/* component/switch/index.wxss */
+.container{
+  width: 156rpx;
+	height: 56rpx;
+	background-color: #f8f8f8;
+  border-radius: 16rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.item{
+  box-sizing: border-box;
+  width: 72rpx;
+  height: 48rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check{
+    background-color: #ffffff;
+} 
+
+.flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

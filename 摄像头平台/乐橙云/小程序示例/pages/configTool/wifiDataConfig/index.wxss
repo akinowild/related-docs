@@ -1,0 +1,106 @@
+.page{
+  height: 100%;
+}
+.tilte{
+  width: 650rpx;
+  height: 56rpx;
+  font-size: 40rpx;
+  font-family: PingFang SC-Heavy, PingFang SC;
+  font-weight: 800;
+  color: #2C2C2C;
+  margin-top: 38rpx;
+}
+
+.iconPosition{
+  position: absolute;
+  top: 18rpx;
+  right: 20rpx;
+  z-index: 99;
+}
+.desc{
+  width: 275rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #8F8F8F;
+}
+
+.desc-img{
+  margin-left: 10rpx;
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  opacity: 1;
+}
+
+.main-img{
+  margin: 0 auto;
+  width: 650rpx;
+  height: 300rpx;
+  background: #FFFFFF;
+  border-radius: 0rpx 0rpx 0rpx 0rpx;
+  opacity: 1;
+}
+
+.inputName{
+  position: relative;
+  margin:0 auto;
+  width: 650rpx;
+  height: 100rpx;
+  background: #F6F6F6;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+  opacity: 1;
+}
+
+.confirm-button{
+  display: flex;
+  margin: 0px 50rpx;
+  background-color: #337fff;
+  border-radius: 45rpx;
+}
+.confirm-button-content{
+  font-family: PingFang SC;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 56rpx;
+	letter-spacing: 0rpx;
+	color: #ffffff;
+}
+
+.nextButton{
+  position: absolute;
+  width: 100%;
+  bottom: 120rpx;
+}
+
+.my-dialog-class{
+  width:100rpx;
+}
+
+.popUp{
+  margin: 0 auto;
+  width: 700rpx;
+  height: 656rpx;
+  background: #FFFFFF;
+  border-radius: 30rpx 30rpx 30rpx 30rpx;
+  opacity: 1;
+}
+.popUp-ttile{
+  margin:50rpx 50rpx 0;
+  width: 600rpx;
+  font-size: 40rpx;
+  font-family: PingFang SC-Bold, PingFang SC;
+  font-weight: bold;
+  color: #2C2C2C;
+}
+.popUp-desc{
+  margin:40rpx 50rpx 0;
+  width: 600rpx;
+  height: 285rpx;
+  font-size: 32rpx;
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #2C2C2C;
+}

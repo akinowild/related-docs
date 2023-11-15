@@ -1,0 +1,12 @@
+<!--pages/configTool/deviceResult/index.wxml-->
+
+
+<view>
+  <view style="margin-top:38rpx;">
+    <image class="img" src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_buzhichichengxupeiwang.png"></image>
+  </view>
+  <view class="desc">
+    该设备不支持小程序配网，请通过开放平台demo或者乐橙App进行添加
+  </view>
+</view>
+

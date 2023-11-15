@@ -1,0 +1,19 @@
+<view>
+		<view class="weui-msg">
+			<view class="weui-msg__text-area">
+				<view class="weui-msg__desc" style="text-align: left">
+					轻应用开发助手仅为开发者提供一个标准、简单的接入样例，以便开发者快速了解乐橙轻应用插件在小程序中的使用。
+				<!-- 您还未登录，请先访问<a href="https://open.imoulife.com">乐橙开放平台网站</a>点击"控制台--应用详情页面"获取开发者信息（APP ID和APP Secret），再登录此轻应用开发助手。 -->
+				</view>
+				<!-- <view class="weui-msg__desc-primary">注：轻应用助手不会在服务端保存任何乐橙开发者账号信息，当然您也可以访问乐橙开放平台官网重置开发者账号信息</view>
+				 -->
+				 <view class="weui-msg__desc-primary" style="text-align: left">当前暂未登录，请先访问乐橙云开放平台官网"控制台-应用详情页面"获取appId和appSecret，以此登录该demo。 </view>
+			</view>
+        <my-row>
+          <van-button round type="info" bind:click="onBindOpenAccount" block size="normal" class='confirm-button'>
+            <span class='confirm-button-content'>前往登录</span>
+          </van-button>
+         </my-row>
+			<!-- </view> -->
+		</view>
+	</view>

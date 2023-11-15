@@ -1,0 +1,33 @@
+<!--pages/configTool/blueToothConfig/linkBlueFail/index.wxml-->
+
+<view class="header">
+  <view>
+    <view>
+      <image
+        src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_shibai.png"
+        class="header-img">
+      </image>
+    </view>
+    <view class="header-title">
+      蓝牙连接失败
+    </view>
+  </view>
+</view>
+<view class="desc">
+  <view>
+    多次尝试连接失败，可能有以下几种原因：
+  </view>
+  <view>
+    1、请检查您的手机是否开启蓝牙
+  </view>
+  <view>
+    2、请确认配网时设备绿灯慢闪
+  </view>
+  <view>
+    3、如果使用手动输入序列号（S/N）添加设备，请确认序列号是否正确
+  </view>
+</view>
+<view style="position: absolute;bottom: 120rpx;width:100%;">
+  <button bindtap="tryAgain" class="button" style="background: #337FFF;color:#FFFFFF;"> 再试一次 </button>
+  <button bindtap="backToIndex" class="button" style="color: #337FFF;margin-top: 44rpx;" > 重新添加 </button>
+</view>

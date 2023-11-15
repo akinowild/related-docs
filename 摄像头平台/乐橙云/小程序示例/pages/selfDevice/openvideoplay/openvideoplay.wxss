@@ -1,0 +1,23 @@
+/* pages/openvideoplay/openvideoplay.wxss */
+.flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide{
+  display: none;
+}
+
+.featuresView{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120rpx;
+  background-color: #F6F6F6;
+}
+
+.icon{
+  width: 80rpx;
+  height: 80rpx;
+}

@@ -1,0 +1,13 @@
+<!--component/switch/index.wxml-->
+<view class="container" bindtouchend="bindtouchend">
+  <view  class="item">
+    <view class="flexCenter {{ checkItem ? 'check':'' }}" style="width: 72rpx;height: 48rpx;border-radius: 16rpx;">
+      <image class="item" style="width:38rpx; height: 38rpx;"  src="{{ checkItem? '/image/switch/Icon_YunLuXiang1_Select@2x.png':'/image/switch/Icon_YunLuXiang1_Normal@2x.png'}}"></image>
+    </view>
+    </view>
+  <view class="item">
+    <view class="flexCenter {{ checkItem ? '':'check' }}" style="width: 72rpx;height: 48rpx;border-radius: 16rpx;">
+      <image class="item"  style="width:38rpx; height: 38rpx;" src="{{ checkItem? '/image/switch/Icon_BenDiLuXiang1_Normal@2x.png':'/image/switch/Icon_BenDiLuXiang1_Select@2x.png'}} "></image>
+    </view>
+   </view>
+</view>

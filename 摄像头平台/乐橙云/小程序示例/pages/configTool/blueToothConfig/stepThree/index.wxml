@@ -1,0 +1,10 @@
+<blue-tooth-config 
+  SN="{{SN}}" 
+  SC="{{SC}}"
+  PID="{{PID}}" 
+  wifiName="{{wifiName}}"  
+  wifiPassword="{{wifiPassword}}" 
+  bindonFail="onFail"
+  bindonSuccess="onSuccess" 
+/>
+

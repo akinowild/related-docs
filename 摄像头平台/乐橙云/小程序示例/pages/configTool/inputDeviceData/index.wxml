@@ -1,0 +1,27 @@
+<view class="page">
+  <view style="margin-top:38rpx;">
+    <image class="img"
+      src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_anquanma.png">
+    </image>
+  </view>
+  <view style="margin:50rpx 50rpx 0;">
+    <view class="tilte">请输入设备机身标签上的序列号和安全码</view>
+  </view>
+  <view class="inputName" style="margin-top:30rpx;padding-left: 20rpx;">
+    <input class="inputName" bindinput="onAppIdInput" type='text' value="{{appid}}" bindblur='appid'
+      placeholder="请输入设备序列号" />
+  </view>
+  <view class="inputName" style="margin-top:30rpx;padding-left: 20rpx;">
+    <input class="inputName" bindinput="onAppSecretInput" type='text' password="{{passwordShow}}" value="{{appsecret}}"
+      bindblur='appsecret' placeholder="请输入8位设备安全码" />
+  </view>
+  <view class="desc">*如标签上无安全验证码，则无需输入</view>
+
+  <view style="position: absolute;bottom: 120rpx;width:100%;">
+    <my-row>
+      <van-button round type="info" bind:click="onBindOpenAccount" block size="normal" class='confirm-button'>
+        <span class='confirm-button-content'>下一步</span>
+      </van-button>
+    </my-row>
+  </view>
+</view>

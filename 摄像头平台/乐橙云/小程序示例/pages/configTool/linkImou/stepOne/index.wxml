@@ -1,0 +1,16 @@
+<!--pages/configTool/linkImou/stepOne/index.wxml-->
+
+
+<view class="page-main">
+  <view>
+    <image
+      src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_yunpingtai.png"
+      class="img">
+    </image>
+    <view class="title">
+      正在连接云平台，请稍候...
+    </view>
+    <view class="desc-number">{{ number}} </view>
+    <view class="desc-s"> s </view>
+  </view>
+</view>

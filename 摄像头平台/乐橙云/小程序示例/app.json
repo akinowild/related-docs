@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/selfDevice/openbind/openbind",
+    "pages/selfDevice/openvideoplay/openvideoplay",
+    "pages/selfDevice/video/video",
+    "pages/selfDevice/index/index",
+    "pages/playBackRedirect/index",
+    "pages/configTool/index/index",
+    "pages/configTool/linkImou/inputDeviceSC/index",
+    "pages/configTool/linkImou/stepOne/index",
+    "pages/configTool/linkImou/stepTwo/index",
+    "pages/configTool/deviceResult/index",
+    "pages/configTool/deviceResult/fail/index",
+    "pages/configTool/deviceResult/cantFail/index",
+    "pages/configTool/deviceResult/success/index",
+    "pages/configTool/wifiDataConfig/index",
+    "pages/configTool/wifiConfig/stepOne/index",
+    "pages/configTool/wifiConfig/stepTwo/index",
+    "pages/configTool/wifiConfig/stepThree/index",
+    "pages/configTool/blueToothConfig/stepOne/index",
+    "pages/configTool/blueToothConfig/stepTwo/index",
+    "pages/configTool/blueToothConfig/stepThree/index",
+    "pages/configTool/blueToothConfig/linkBlueFail/index",
+    "pages/configTool/inputDeviceData/index",
+    "pages/configTool/addDevice/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "乐橙开放平台试用中心",
+    "navigationBarTextStyle": "black"
+  },
+  "requiredBackgroundModes": ["audio", "location"],
+  "networkTimeout": {
+    "request": 30000
+  },
+  "sitemapLocation": "sitemap.json"
+}

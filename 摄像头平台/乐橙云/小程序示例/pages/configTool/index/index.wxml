@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="main">
+    <view class="content">
+      <view class="title">
+        <view class="title1"> 您好， </view>
+        <view class="title2"> 请登录开发者账号 </view>
+      </view>
+      <view class="desc">
+        登录乐橙开放平台网站点击“控制台--应用详情页面”，即可获取App ID和App Secret
+      </view>
+      <view class="inputName" style="margin-top:80rpx;padding-left: 20rpx;">
+        <input class="inputName" bindinput="onAppIdInput" type='text' value="{{appid}}" placeholder="请输入AppId" />
+      </view>
+      <view class="inputName" style="margin-top:40rpx;padding-left: 20rpx;">
+        <input class="inputName" bindinput="onAppSecretInput" type='text' password="true" value="{{appsecret}}"
+          placeholder="请输入AppSecret" />
+      </view>
+      <view style="margin-top:100rpx;">
+        <my-row>
+          <van-button disabled="{{!buttonCanClick}}" round type="info" bind:click="onBindOpenAccount" block
+            size="normal" class='confirm-button'>
+            <span class='confirm-button-content'>登录</span>
+          </van-button>
+        </my-row>
+      </view>
+    </view>
+  </view>
+</view>

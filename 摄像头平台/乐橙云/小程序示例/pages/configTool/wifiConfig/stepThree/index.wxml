@@ -1,0 +1,8 @@
+<wifi-config 
+  SN="{{SN}}"
+  wifiName="{{wifiName}}" 
+  wifiPassword="{{wifiPassword}}"
+  SC="{{SC}}"
+  bindonFail="onFail"
+  bindonSuccess="onSuccess"
+/>

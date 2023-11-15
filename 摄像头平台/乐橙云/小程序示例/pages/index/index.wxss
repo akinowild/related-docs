@@ -1,0 +1,52 @@
+.page{
+  min-height: 100vh;
+  padding: 0 50rpx;
+  background-color: #f9fafb;
+}
+.main{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9fafb;
+}
+.card{
+  width: 305rpx;
+	height: 224rpx;
+	background-color: #ffffff;
+	box-shadow: 0rpx 10rpx 32rpx 0rpx 
+		rgba(0, 0, 0, 0.04);
+  border-radius: 20rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 38rpx;
+}
+
+.card1:nth-child(even){
+  margin-left: 40rpx;
+}
+.card-img-wrapper{
+  padding-top:20rpx;
+}
+.card-img{
+  width: 112rpx;
+  height: 112rpx;
+}
+.footer-desc{
+	font-family: PingFang SC;
+	font-size: 20rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 48rpx;
+	letter-spacing: 0rpx;
+  color: #999999;
+  position: absolute;
+  bottom: 32rpx;
+  width: 100vw;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

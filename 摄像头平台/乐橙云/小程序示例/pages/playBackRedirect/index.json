@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "imou-player":"/component/imouPlayer/imouPlayer",
+    "van-button":"@vant/weapp/button/index",
+    "switch":"/component/switch/index",
+    "timeLine": "/component/timeLine/index"
+  }
+}

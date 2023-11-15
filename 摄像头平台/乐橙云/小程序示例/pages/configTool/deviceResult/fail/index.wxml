@@ -1,0 +1,33 @@
+<!--pages/configTool/blueToothConfig/linkBlueFail/index.wxml-->
+
+<view class="header">
+  <view>
+    <view>
+      <image
+        src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_shibai.png"
+        class="header-img">
+      </image>
+    </view>
+    <view class="header-title">
+      添加失败
+    </view>
+  </view>
+</view>
+<view class="desc">
+  <view>
+    请确认后重新添加：
+  </view>
+  <view>
+    1、检查设备供电是否正常
+  </view>
+  <view>
+    2、检查Wi-Fi网络是否正常
+  </view>
+  <view>
+    3、检查输入的Wi-Fi密码是否正确
+  </view>
+</view>
+<view style="position: absolute;bottom: 120rpx;width:100%;">
+  <button  bindtap="tryAgain" class="button" style="background: #337FFF;color:#FFFFFF;"> 重试 </button>
+  <button bindtap="backToIndex" class="button" style="color: #337FFF;margin-top: 44rpx;"> 退出 </button>
+</view>

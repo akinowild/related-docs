@@ -1,0 +1,23 @@
+<!--pages/configTool/addDevice/index.wxml-->
+
+<view class="desc"> 
+  请选择添加方式
+</view>
+<view class="deviceContainer">
+  <view  class="addDeviceContainer" bindtap="addDevice" style="margin-right:30rpx;">
+    <view style="text-align: center;">
+      <image class="img" src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_saoma.png"  mode="aspectFit"></image>
+      <view class="desc-title">扫码添加</view>
+    </view>
+   </view>
+  <view  class="addDeviceContainer" bindtap="inputDevice">
+    <view style="text-align: center;">
+      <image class="img" src="https://festatic.imou.com/webfrontstatic/694da0fd6e3949c2a781ac7d453722fa_20230609/icon_shoudong.png"  mode="aspectFit"></image>
+      <view class="desc-title">手动添加</view>
+    </view>
+  </view>
+</view>
+
+<view class="text">说明:若设备已在线，可直接添加到账号下；若设备不在线，部分型号设备可配网后添加到账号下；</view>
+
+

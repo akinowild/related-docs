@@ -1,0 +1,18 @@
+/* pages/configTool/deviceResult/index.wxss */
+.img {
+  margin: 0 50rpx;
+  width: 650rpx;
+  height: 400rpx;
+  background: #F6F6F6;
+  border-radius: 40rpx 40rpx 40rpx 40rpx;
+  opacity: 1;
+}
+
+.desc {
+  margin: 50rpx auto 0;
+  width: 650rpx;
+  font-size: 32rpx;
+  font-family: PingFang SC-Bold, PingFang SC;
+  font-weight: bold;
+  color: #2C2C2C;
+}

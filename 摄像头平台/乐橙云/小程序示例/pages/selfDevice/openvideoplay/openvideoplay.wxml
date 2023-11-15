@@ -1,0 +1,41 @@
+<view style="width:100vw;height:420rpx;display: flex;justify-content: center;align-items: center;">
+  <view style="width:100vw;height:420rpx;">
+    <imou-player id="imou-player" appId="{{appId}}" appSecret="{{appSecret}}" type="{{1}}" token="{{token}}"
+      deviceId="{{deviceId}}" channelId="{{channelId}}" bind:error="handleError" bind:stateChange="playState"
+      isTalk="{{isTalk}}" />
+  </view>
+</view>
+<!-- 功能集的判断 -->
+<view class="featuresView">
+  <view class="flexCenter" style="flex:2" bindtap="handleTalk">
+    <image src="{{isTalk?'/image/selfDevice/icon_duijiang_c.png':'/image/selfDevice/icon_duijiang.png'}}" class="icon">
+    </image>
+    <live-pusher mode="RTC" id="livePusher" enable-camera="{{false}}" url="{{pushUrl}}" audio-quality="low"
+      bindstatechange="pusherStateChange" style="width: 0px; height: 0px;" autopush="{{false}}"
+      binderror="livePusherError">
+    </live-pusher>
+  </view>
+  <view class="flexCenter" style="flex:1" bindtap="snapshot">
+    <image src="/image/selfDevice/icon_jietu.png" class="icon"></image>
+  </view>
+  <view class="flexCenter" style="flex:2" bindtap="handlePTZ">
+    <image src="{{isPtzPanel?'/image/selfDevice/icon_yuntai_c.png':'/image/selfDevice/icon_yuntai.png'}}" class="icon">
+    </image>
+  </view>
+</view>
+<view style="width:100%;height:400rpx;" class="flexCenter" hidden="{{!isPtzPanel}}">
+  <!-- 一个图片 -->
+
+  <view id="ptz-img-container" catchtouchstart="handlePtzTouchStart" catchtouchend="handlePtzTouchEnd"
+    style="margin-top: 90rpx;">
+    <image src="{{ptzImgSrc}}" style="width: 400rpx;height: 400rpx;"> </image>
+  </view>
+</view>
+
+<view bindtap="enterPlayBack" class="flexCenter" style="width: 100%;bottom: 80rpx;position: absolute;">
+  <view class="flexCenter"
+    style="width: 278rpx;height: 64rpx;background-color: #ffffff;border-radius: 36rpx;	border: solid 2rpx #337fff;text-align: center;">
+    <text
+      style="width:216rpx;height:40rpx;font-family: PingFang SC;font-size:28rpx;font-weight:normal;font-stretch: normal; line-height: 40rpx; color: #337fff;">查看历史录像>></text>
+  </view>
+</view>
