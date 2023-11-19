@@ -1,0 +1,2 @@
+1、安装node.js, 在dos命令窗口输入命令：node https.js，启动web服务器，然后在chrome80+浏览器访问https://localhost:9091/demo.html打开demo进行测试
+2、双击启动webs.exe(默认80端口，80占用会默认递增进行监听)，然后在chrome80+浏览器访问https://localhost/demo.html打开demo进行测试
